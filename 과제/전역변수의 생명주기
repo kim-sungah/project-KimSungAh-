@@ -1,0 +1,12 @@
+// 전역 변수 x 생성
+var x = 'global';
+// 전역 변수 x에 값 할당
+
+function foo() {
+  var x = 'local';
+  console.log(x); // local
+  return x;
+}
+
+foo();
+console.log(x); // global
